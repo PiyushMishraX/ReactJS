@@ -19,13 +19,40 @@ import React from 'react'
 //   )
 // }
 
+// const App = () => {
+//   return (
+//     <div id='parent'>
+//       <h1 id='child1'>App</h1>
+//       <h2 id='child2'>App</h2>
+//     </div> 
+//   )
+// }
+
+// const App = () => {
+//   return (
+//     <div id='parent'>
+//       <h1 id='child1'>App</h1>
+//       <h2 id='child2'>App</h2>
+//     </div> 
+//     <div id="uncle">
+//       // not possible give error create fragment
+//     </div>
+//   )
+// }
+
 const App = () => {
   return (
-    <div id='parent'>
-      <h1 id='child1'>App</h1>
-      <h2 id='child2'>App</h2>
-    </div> 
+    <div>
+      <div id='parent'>
+        <h1 id='child1'>App</h1>
+        <h2 id='child2'>App</h2>
+      </div> 
+      <div id="uncle">
+        // not possible give error create fragment
+      </div>
+    </div>
   )
 }
+
 
 export default App
