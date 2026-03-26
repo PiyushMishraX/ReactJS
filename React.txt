@@ -2,3 +2,6 @@ Core ConceptsComponents: Think of these as reusable building blocks. You build a
 
 
 React -> .jsx The Standard. Use this for any file containing React components/HTML-like tags.
+
+
+Library and fra
