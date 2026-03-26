@@ -19,3 +19,5 @@ vite is used to create folder of js, vanilla js , react , preact etc
 cd react-first
 
 npm run dev
+
+use simple react snippet extension

@@ -27,3 +27,7 @@ export default defineConfig([
     },
   },
 ])
+
+
+// used to create custom rules
+// such as to resolve might be appearningmerge conflicts

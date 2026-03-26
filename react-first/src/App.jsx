@@ -55,7 +55,7 @@ import React from 'react'
 //   )
 // }
 
-//  FRAGMENT
+//  FRAGMENT -> with empty tag that rappes thses element and the tags do not appear in structure
 
 const App = () => {
   return (
@@ -65,7 +65,7 @@ const App = () => {
         <h2 id='child2'>App</h2>
       </div> 
       <div id="uncle">
-        
+
       </div>
     </>
   )
