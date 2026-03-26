@@ -3,7 +3,7 @@
 
 // named and deafult exports
 
-// deafult export es6 
+// deafult export es6  // only onme deafult export possible
 // import a from './app.js'
 import ac from './app.js'
 
