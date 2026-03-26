@@ -4,4 +4,18 @@ Core ConceptsComponents: Think of these as reusable building blocks. You build a
 React -> .jsx The Standard. Use this for any file containing React components/HTML-like tags.
 
 
-Library and fra
+create react folder
+
+older method -
+
+npm create-react-app
+in terminal
+
+react ko as a framework use karo next etc ke sath
+
+npm create vite 
+vite is used to create folder of js, vanilla js , react , preact etc
+
+cd react-first
+
+npm run dev
