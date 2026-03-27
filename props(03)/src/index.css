@@ -17,10 +17,11 @@ body{
 }
 
 .parent{
-  padding: 2px;
+  padding: 20px;
   display: flex;
   /* align-items: center; */
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card{
@@ -29,7 +30,19 @@ body{
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  background-color: #333;
+  /* background-color: #333; */
+  background-color: #222;
+}
+
+.card img{
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card p{
+  margin: 20px 0px;
 }
 
 .card button{
