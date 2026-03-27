@@ -40,7 +40,7 @@ const App = () => {
   return (
     <div className='parent'> 
            {/* Card(Piyush 2)  */}
-      <Card user='Piyush 2' />  
+      <Card user='Piyush 2' age1='20' age2={20}/>  
     </div>
   )
 }
