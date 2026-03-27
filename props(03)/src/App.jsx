@@ -30,6 +30,10 @@ import Card from './components/Card.jsx'
 //   )
 // }
 
+// function a(a){
+//   console.log('hello',a);
+// }
+// a(10) // same as prop
 
 // passing properties
 const App = () => {
