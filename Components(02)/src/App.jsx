@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './components/card'
+import Navbar from './components/navbar'
 
 
 // not good we should try to kee[ App()] empty
@@ -67,6 +68,9 @@ const App = () => {
   const age = 20
   return (
     <div>
+      <Navbar/>
+      <Navbar/>
+      <Card />
       <Card />
     </div>
   )
