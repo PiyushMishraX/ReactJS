@@ -63,18 +63,18 @@ import Navbar from './components/navbar'
 //   )
 // }
 
-const App = () => {
-  const user = 'Piyush'
-  const age = 20
-  return (
-    <div>
-      <Navbar/>
-      <Navbar/>
-      <Card />
-      <Card />
-    </div>
-  )
-}
+// const App = () => {
+//   const user = 'Piyush'
+//   const age = 20
+//   return (
+//     <div>
+//       <Navbar/>
+//       <Navbar/>
+//       <Card />
+//       <Card />
+//     </div>
+//   )
+// }
 
 
 
