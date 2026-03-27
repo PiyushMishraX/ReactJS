@@ -16,3 +16,26 @@ body{
   background-color: #111;
 }
 
+.parent{
+  padding: 2px;
+  display: flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 300px;
+  border: 2px solid white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #333;
+}
+
+.card button{
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
