@@ -38,7 +38,8 @@ import Card from './components/Card.jsx'
 // passing properties
 const App = () => {
   return (
-    <div className='parent'>        
+    <div className='parent'> 
+           {/* Card(Piyush 2)  */}
       <Card user='Piyush 2' />  
     </div>
   )
