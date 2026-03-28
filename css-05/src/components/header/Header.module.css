@@ -6,3 +6,14 @@
   padding: 20px;
   margin: 5px;
 } 
+
+.btn{
+  background-color: yellow;
+  color: black;
+  width: 80px;
+  height: 40px;
+}
+
+.logo{
+  text-decoration: underline;
+}

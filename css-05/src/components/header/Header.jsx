@@ -7,10 +7,10 @@ import styles from './Header.module.css'
 const Header = () => {
   return (
     <div className={styles.header}>
-      <h3>Amazon</h3>
+      <h3 className={styles.logo}>Amazon</h3>
       {/* <button className='btn'>Login</button> */}
-      {/* <button className={styles.btn}>Login</button>  */}
-      {/*  now it only apply css from inside the styles css only  */}
+      <button className={styles.btn}>Login</button> 
+      {/*  now it only apply css from inside the styles css only ( btn insdie header.module.css)  */}
 
       {/* <button className={styles2.btn}>Login</button>  */}
     </div>

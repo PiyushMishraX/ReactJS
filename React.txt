@@ -24,3 +24,20 @@ use simple react snippet extension
 
 icons-
 npm install lucide-react@next
+
+
+go to the folder ( create using vite then cd folder )
+tailwind -
+npm install tailwindcss @tailwindcss/vite
+
+vite.config.js- add
+import tailwindcss from '@tailwindcss/vite'
+
+plugins: [react()], -> plugins: [react(),tailwindcss()],
+
+
+index.css add -
+@import "tailwindcss";
+
+extension for ease-
+tailwind css intellisense
