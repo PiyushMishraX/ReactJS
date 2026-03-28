@@ -201,9 +201,9 @@ import Card from "./components/Card";
 const App = () => {
   // const arr = [10,20,30,40]
   // const arr = [{user:'Piyush'},{user:'Sarthak'},{user:'Harsh'}];
-  const jobOpenings = [
+const jobOpenings = [
   {
-    brandLogo: "https://logo.clearbit.com/google.com",
+    brandLogo: "https://cdn.simpleicons.org/google/4285F4",
     companyName: "Google",
     datePosted: "2 days ago",
     post: "Software Engineer III",
@@ -213,7 +213,7 @@ const App = () => {
     location: "Mountain View, CA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/apple.com",
+    brandLogo: "https://cdn.simpleicons.org/apple/000000",
     companyName: "Apple",
     datePosted: "5 days ago",
     post: "iOS Developer",
@@ -223,7 +223,7 @@ const App = () => {
     location: "Cupertino, CA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/meta.com",
+    brandLogo: "https://cdn.simpleicons.org/meta/0668E1",
     companyName: "Meta",
     datePosted: "1 day ago",
     post: "Product Designer",
@@ -233,7 +233,8 @@ const App = () => {
     location: "Menlo Park, CA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/amazon.com",
+    // brandLogo: "https://cdn.simpleicons.org/amazon/FF9900",
+    brandLogo: "https://thumbs.dreamstime.com/z/amazon-logo-editorial-illustrative-white-background-eps-download-vector-jpeg-banner-ai-amazon-logo-editorial-illustrative-208329107.jpg",
     companyName: "Amazon",
     datePosted: "10 days ago",
     post: "Cloud Solutions Architect",
@@ -243,7 +244,7 @@ const App = () => {
     location: "Seattle, WA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/netflix.com",
+    brandLogo: "https://cdn.simpleicons.org/netflix/E50914",
     companyName: "Netflix",
     datePosted: "3 days ago",
     post: "UI Engineer",
@@ -253,7 +254,7 @@ const App = () => {
     location: "Los Gatos, CA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/microsoft.com",
+    brandLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShBu0cnozmDr454aSmHhedZltGVgU8fTfZwA&s",
     companyName: "Microsoft",
     datePosted: "7 days ago",
     post: "Azure Security Specialist",
@@ -263,7 +264,7 @@ const App = () => {
     location: "Redmond, WA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/nvidia.com",
+    brandLogo: "https://cdn.simpleicons.org/nvidia/76B900",
     companyName: "NVIDIA",
     datePosted: "4 days ago",
     post: "AI Research Scientist",
@@ -273,7 +274,7 @@ const App = () => {
     location: "Santa Clara, CA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/tesla.com",
+    brandLogo: "https://cdn.simpleicons.org/tesla/CC0000",
     companyName: "Tesla",
     datePosted: "8 days ago",
     post: "Autopilot Systems Engineer",
@@ -283,7 +284,7 @@ const App = () => {
     location: "Palo Alto, CA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/adobe.com",
+    brandLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy1Y_ugO3i3aqa6gHgXr2MuWk0ZzywuoSaU7X4B-QYEw&s",
     companyName: "Adobe",
     datePosted: "12 days ago",
     post: "Front-end Intern",
@@ -293,7 +294,7 @@ const App = () => {
     location: "San Jose, CA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/salesforce.com",
+    brandLogo: "https://cdn.simpleicons.org/salesforce/00A1E0",
     companyName: "Salesforce",
     datePosted: "6 days ago",
     post: "Backend Developer",
@@ -303,7 +304,6 @@ const App = () => {
     location: "San Francisco, CA"
   }
 ];
-
 // console.log(jobOpenings)
 
 
@@ -316,7 +316,7 @@ const App = () => {
       // return <h1>{elem.companyName}</h1>
       // return <Card/>
 
-      return <Card company={elem.companyName}/>
+      return <Card company={elem.companyName} post ={elem.post} tag1={elem.tag1} tag2={elem.tag2} location={elem.location} pay={elem.pay} brandLogo={elem.brandLogo} datePosted={elem.datePosted}/>
       
     })}
   </div>;
