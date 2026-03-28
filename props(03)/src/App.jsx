@@ -42,6 +42,7 @@ const App = () => {
            {/* Card(Piyush 2)  */}
       <Card user='Piyush 2' age1='20' age2={20}/>  
       {/* for number array variable etc use {} */}
+      <Card user='Piyush-3' age1='20' age2={20}/> 
     </div>
   )
 }
