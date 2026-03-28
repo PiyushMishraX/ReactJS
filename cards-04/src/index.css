@@ -29,6 +29,9 @@ body{
   background-color: #fff;
   border-radius: 30px;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card .top{
@@ -38,9 +41,68 @@ body{
 }
 
 .top img{
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
   border: 1px solid #dadada;
-  
+  padding: 2px;
+ 
+}
+
+.top button{
+  height: 15px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dadada;
+  padding: 3px 6px;
+  font-size: 10px;
+  border-radius: 5px;
+  gap: 3px;
+  background-color: transparent;
+  color: #b1b1b1;
+  color: #1f1f1f;
+}
+
+.center{
+  /* background-color: red; */
+}
+
+.center h3{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.center h3 span{
+  font-size: 9px;
+  font-weight: 400;
+  color: #8b8b8b;
+}
+
+.center h2{
+  font-size: 20px;
+
+}
+
+.center .tag{
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.center .tag h4{
+  font-size: 12px;
+  background-color: #dadada;
+  color: #111;
+  font-weight: 500;
+  padding: 3px 6px;
+
+}
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #b1b1b1;
+  /* padding: 10px 0px; */
+  padding-top: 15px;
 }
