@@ -2,7 +2,7 @@ import React from "react";
 import { Bookmark } from "lucide-react";
 // import {RiBookmarkLine} from '@remixicon/react/HomeFillIcon';
 import Card from "./components/Card";
-import User from "./components/User";
+// import User from "./components/User";
 
 // const App = () => {
 //   return (
@@ -132,31 +132,194 @@ import User from "./components/User";
 
 // arr of objects ( looks like json )
 
+// const App = () => {
+//   // const arr = [10,20,30,40]
+//   // const arr = [{user:'Piyush'},{user:'Sarthak'},{user:'Harsh'}];
+//   const arr = [
+//     { 
+//       user: "Piyush",
+//       age:20
+//     }, 
+//     { 
+//       user: "Sarthak" ,
+//       age:30
+//     }, 
+//     { 
+//       user: "Harsh" ,
+//       age:36
+//     }
+//   ];
+
+//   console.log(arr);
+
+//   arr.forEach(function (elem) {
+//     // console.log(elem);
+//     // console.log(elem.user);
+//     // console.log(elem.age);
+//   });
+
+//   return <div className="parent"></div>;
+// };
+
+// export default App;
+
+
+// / number of Cards
+
+// const App = () => {
+//   // const arr = [10,20,30,40]
+//   // const arr = [{user:'Piyush'},{user:'Sarthak'},{user:'Harsh'}];
+//   const arr = [
+//     { 
+//       user: "Piyush",
+//       age:20
+//     }, 
+//     { 
+//       user: "Sarthak" ,
+//       age:30
+//     }, 
+//     { 
+//       user: "Harsh" ,
+//       age:36
+//     }
+//   ];
+
+
+
+//   return <div className="parent">
+//     {arr.map(function (elem) {
+//       // return <Card /> // number of cards same as the number of elems in array
+//       return <User name={elem.user}/> // number of cards
+//     })}
+//   </div>;
+// };
+
+// export default App;
+
+
+// final
 const App = () => {
   // const arr = [10,20,30,40]
   // const arr = [{user:'Piyush'},{user:'Sarthak'},{user:'Harsh'}];
-  const arr = [
-    { 
-      user: "Piyush",
-      age:20
-    }, 
-    { 
-      user: "Sarthak" ,
-      age:30
-    }, 
-    { 
-      user: "Harsh" ,
-      age:36
-    }
-  ];
+  const jobOpenings = [
+  {
+    brandLogo: "https://logo.clearbit.com/google.com",
+    companyName: "Google",
+    datePosted: "2 days ago",
+    post: "Software Engineer III",
+    tag1: "Full-time",
+    tag2: "Mid-level",
+    pay: 115,
+    location: "Mountain View, CA"
+  },
+  {
+    brandLogo: "https://logo.clearbit.com/apple.com",
+    companyName: "Apple",
+    datePosted: "5 days ago",
+    post: "iOS Developer",
+    tag1: "Full-time",
+    tag2: "Senior level",
+    pay: 135,
+    location: "Cupertino, CA"
+  },
+  {
+    brandLogo: "https://logo.clearbit.com/meta.com",
+    companyName: "Meta",
+    datePosted: "1 day ago",
+    post: "Product Designer",
+    tag1: "Full-time",
+    tag2: "Junior level",
+    pay: 85,
+    location: "Menlo Park, CA"
+  },
+  {
+    brandLogo: "https://logo.clearbit.com/amazon.com",
+    companyName: "Amazon",
+    datePosted: "10 days ago",
+    post: "Cloud Solutions Architect",
+    tag1: "Full-time",
+    tag2: "Senior level",
+    pay: 150,
+    location: "Seattle, WA"
+  },
+  {
+    brandLogo: "https://logo.clearbit.com/netflix.com",
+    companyName: "Netflix",
+    datePosted: "3 days ago",
+    post: "UI Engineer",
+    tag1: "Full-time",
+    tag2: "Senior level",
+    pay: 180,
+    location: "Los Gatos, CA"
+  },
+  {
+    brandLogo: "https://logo.clearbit.com/microsoft.com",
+    companyName: "Microsoft",
+    datePosted: "7 days ago",
+    post: "Azure Security Specialist",
+    tag1: "Full-time",
+    tag2: "Mid-level",
+    pay: 110,
+    location: "Redmond, WA"
+  },
+  {
+    brandLogo: "https://logo.clearbit.com/nvidia.com",
+    companyName: "NVIDIA",
+    datePosted: "4 days ago",
+    post: "AI Research Scientist",
+    tag1: "Full-time",
+    tag2: "Senior level",
+    pay: 165,
+    location: "Santa Clara, CA"
+  },
+  {
+    brandLogo: "https://logo.clearbit.com/tesla.com",
+    companyName: "Tesla",
+    datePosted: "8 days ago",
+    post: "Autopilot Systems Engineer",
+    tag1: "Full-time",
+    tag2: "Junior level",
+    pay: 95,
+    location: "Palo Alto, CA"
+  },
+  {
+    brandLogo: "https://logo.clearbit.com/adobe.com",
+    companyName: "Adobe",
+    datePosted: "12 days ago",
+    post: "Front-end Intern",
+    tag1: "Part-time",
+    tag2: "Junior level",
+    pay: 55,
+    location: "San Jose, CA"
+  },
+  {
+    brandLogo: "https://logo.clearbit.com/salesforce.com",
+    companyName: "Salesforce",
+    datePosted: "6 days ago",
+    post: "Backend Developer",
+    tag1: "Full-time",
+    tag2: "Mid-level",
+    pay: 105,
+    location: "San Francisco, CA"
+  }
+];
 
-  console.log(arr);
+// console.log(jobOpenings)
 
-  arr.forEach(function (elem) {
-    console.log(elem);
-  });
-  
-  return <div className="parent"></div>;
+
+
+  return <div className="parent">
+    {jobOpenings.map(function (elem) {
+      // return <h1>Hey</h1>
+      // return <h1>{elem}</h1> // obj is not valild as react child 
+
+      // return <h1>{elem.companyName}</h1>
+      // return <Card/>
+
+      return <Card company={elem.companyName}/>
+      
+    })}
+  </div>;
 };
 
 export default App;
