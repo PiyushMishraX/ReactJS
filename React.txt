@@ -41,3 +41,12 @@ index.css add -
 
 extension for ease-
 tailwind css intellisense
+
+
+
+Feature based vs atomic based structure - 
+feature is creating components for section ( such as nav)
+
+atomic based is micro managing where every part is sepearate from each other and ca be reused , such as buttons etc
+
+WE should follow combination of it 
