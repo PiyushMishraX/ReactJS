@@ -1,13 +1,12 @@
 import React from 'react'
-import './Header.module.css'
+// import './Header.module.css'
+import styles from './Header.module.css'
 
 const Header = () => {
   return (
-    <div className='header'>
+    <div className={styles.header}>
       <h3>Amazon</h3>
-      {/* <button>Login</button> */}
       <button className='btn'>Login</button>
-      {/* mistakenlly gave btn class to button which applies asme properties as the btn class , which we do not want */}
     </div>
   )
 }
