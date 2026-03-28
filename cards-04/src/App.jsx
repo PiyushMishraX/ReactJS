@@ -99,16 +99,32 @@ import User from "./components/User";
 // };
 
 // data passing through arr
+// const App = () => {
+//   const arr = [10,20,30,40]
+//   return (
+//     <div className="parent">
+//       <User name={arr[0]}/>
+//       <User name={arr[1]}/>
+//       <User name={arr[2]}/>
+//     </div>
+//   );
+// };
+
+// arr .map
+
 const App = () => {
   const arr = [10,20,30,40]
   return (
     <div className="parent">
-      <User name={arr[0]}/>
-      <User name={arr[1]}/>
-      <User name={arr[2]}/>
+      {arr.map(function () {
+        // return 'hello' // return what is written inside to the parent as a value // writes 4 times
+        // return 10
+        return 'Piyush'
+      })}
     </div>
   );
 };
+
 
 
 
