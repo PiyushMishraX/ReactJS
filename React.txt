@@ -21,3 +21,6 @@ cd react-first
 npm run dev
 
 use simple react snippet extension
+
+icons-
+npm install lucide-react@next

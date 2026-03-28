@@ -308,18 +308,35 @@ const jobOpenings = [
 
 
 
+  // return <div className="parent">
+  //   {jobOpenings.map(function (elem, idx) {
+  //     // return <h1>Hey</h1>
+  //     // return <h1>{elem}</h1> // obj is not valild as react child 
+
+  //     // return <h1>{elem.companyName}</h1>
+  //     // return <Card/>
+
+  //     // console.log(idx);
+
+  //     return <Card key={idx} company={elem.companyName} post ={elem.post} tag1={elem.tag1} tag2={elem.tag2} location={elem.location} pay={elem.pay} brandLogo={elem.brandLogo} datePosted={elem.datePosted}/>
+      
+  //   })}
+  // </div>;
   return <div className="parent">
-    {jobOpenings.map(function (elem) {
-      // return <h1>Hey</h1>
-      // return <h1>{elem}</h1> // obj is not valild as react child 
-
-      // return <h1>{elem.companyName}</h1>
-      // return <Card/>
-
-      return <Card company={elem.companyName} post ={elem.post} tag1={elem.tag1} tag2={elem.tag2} location={elem.location} pay={elem.pay} brandLogo={elem.brandLogo} datePosted={elem.datePosted}/>
+    {jobOpenings.map(function (elem, idx) {
+      
+      // evey element gets unique identiy for indentification of react
+      return <div key={idx}>
+        <Card key={idx} company={elem.companyName} post ={elem.post} tag1={elem.tag1} tag2={elem.tag2} location={elem.location} pay={elem.pay} brandLogo={elem.brandLogo} datePosted={elem.datePosted}/>
+      </div>
       
     })}
   </div>;
 };
 
 export default App;
+
+
+// can make contact card etc
+
+// key props react thik every props as one , react want to differenciate it , evey prop should have unique key
