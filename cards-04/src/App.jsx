@@ -1,7 +1,7 @@
 import React from "react";
 import { Bookmark } from "lucide-react";
 // import {RiBookmarkLine} from '@remixicon/react/HomeFillIcon';
-import Card from './components/Card'
+import Card from "./components/Card";
 import User from "./components/User";
 
 // const App = () => {
@@ -78,19 +78,17 @@ import User from "./components/User";
 // };
 // const App = () => {
 //   return (
-  //     <div className="parent">
-  // <Card />
+//     <div className="parent">
+// <Card />
 //     </div>
 //   );
 // };
 
-
-
 // data passin through values
 // const App = () => {
 //   return (
-  //     <div className="parent">
-  //     <Card />
+//     <div className="parent">
+//     <Card />
 //       <User name='Piyush'/>
 //       <User name='sharthak'/>
 //       <User name='Aman'/>
@@ -112,21 +110,53 @@ import User from "./components/User";
 
 // arr .map
 
+// const App = () => {
+//   const arr = [10,20,30,40]
+//   return (
+//     <div className="parent">
+//       {/* {arr} */}
+//       {arr.map(function (elem) {
+//         // return 'hello' // return what is written inside to the parent as a value // writes 4 times
+//         // return 10
+//         // return 'Piyush'
+//         // return elem //10203040
+//         // return elem*2
+//         // return <h1>{elem}</h1>
+//         // return <h1>{elem}</h1>
+//         return <h1>{elem/2}</h1>
+//       })}
+//     </div>
+//   );
+// };
+
+
+// arr of objects ( looks like json )
+
 const App = () => {
-  const arr = [10,20,30,40]
-  return (
-    <div className="parent">
-      {arr.map(function () {
-        // return 'hello' // return what is written inside to the parent as a value // writes 4 times
-        // return 10
-        return 'Piyush'
-      })}
-    </div>
-  );
+  // const arr = [10,20,30,40]
+  // const arr = [{user:'Piyush'},{user:'Sarthak'},{user:'Harsh'}];
+  const arr = [
+    { 
+      user: "Piyush",
+      age:20
+    }, 
+    { 
+      user: "Sarthak" ,
+      age:30
+    }, 
+    { 
+      user: "Harsh" ,
+      age:36
+    }
+  ];
+
+  console.log(arr);
+
+  arr.forEach(function (elem) {
+    console.log(elem);
+  });
+  
+  return <div className="parent"></div>;
 };
-
-
-
-
 
 export default App;
