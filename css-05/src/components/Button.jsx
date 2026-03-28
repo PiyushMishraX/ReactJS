@@ -1,11 +1,15 @@
 import React from 'react'
+import '../styles/xyz.css'
 
-const Button = () => {
+
+const button = () => {
   return (
-    <div className='btn'>
-      This is a Button
+    <div className='xyz'>
+      This is a button1
+      
     </div>
   )
 }
 
-export default Button
+export default button
+

@@ -16,6 +16,7 @@ body {
   background-color: #111;
 }
 
+/* 
 .btn{
   background-color: red;
   width: fit-content;
@@ -26,4 +27,11 @@ body {
 
 .header{
   background-color: lightseagreen;
-}
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 5px;
+} 
+ */
+
