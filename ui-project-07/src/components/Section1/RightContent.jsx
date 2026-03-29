@@ -10,9 +10,9 @@ const RightContent = (props) => {
       <RightCard/>
       <RightCard/> */}
 
-      {props.users.map(function (elem) {
+      {props.users.map(function (elem,idx) {
         // return 'hello'
-        return <RightCard img={elem.img} tag ={elem.tag}/>
+        return <RightCard key={idx}  img={elem.img} tag ={elem.tag}/>
       })}
     </div>
   )
