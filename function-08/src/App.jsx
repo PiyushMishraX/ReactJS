@@ -72,15 +72,27 @@
 import React from 'react'
 
 const App = () => {
+
+  function inputChanging(){
+    console.log('use is Typing');    
+  }
   return (
     <div>
       {/* <input onClick={()=>{
         console.log('input par click hua');
         
       }} type="text" placeholder='Enter Name' /> */}
-      
-      <input onChange={()=>{
-        console.log('input par click hua');
+
+      {/* <input onChange={inputChanging} type="text" placeholder='Enter Name' /> */}
+
+        {/* passing values without calling the function on compilation time/ automatic running  */}
+        {/* create function directly in event listner so it can take calls(of elem) , then can passon the properties in the other function*/}
+      <input 
+      // onClick={(elem)=>{
+      onChange={(elem)=>{
+        // console.log(elem);
+        // console.log(elem.target);
+        console.log(elem.target.value);
         
       }} type="text" placeholder='Enter Name' />
     </div>
