@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+#right::-webkit-scrollbar{
+    display: none;
+} 
+/* to scroll click on the scrollbar once than move */

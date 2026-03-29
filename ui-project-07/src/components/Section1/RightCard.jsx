@@ -16,7 +16,7 @@ const RightCard = (props) => {
         src={props.img}
         alt=""
       />
-      <RightCardContent tag={props.tag} />
+      <RightCardContent id={props.id} tag={props.tag} />
     </div>
   );
 };
