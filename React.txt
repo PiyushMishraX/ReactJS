@@ -50,3 +50,20 @@ feature is creating components for section ( such as nav)
 atomic based is micro managing where every part is sepearate from each other and ca be reused , such as buttons etc
 
 WE should follow combination of it 
+
+
+remix icon -
+npm install @remixicon/react
+
+import { RiHeartFill, RiAdminLine } from '@remixicon/react';
+( in react file needin g the icons)
+
+using -
+const MyComponent = () => {
+  return (
+    <div>
+      <RiHeartFill size={36} color="red" /> {/* Customize size and color */}
+      <RiAdminLine className="my-icon" /> {/* Add custom class names */}
+    </div>
+  );
+};
