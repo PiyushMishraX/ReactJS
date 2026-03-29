@@ -8,7 +8,7 @@ const HeroText = () => {
           <span>customer</span>
           <br /> segmentation
         </h3>
-        <p className="text-xl font-medium text-gray-600">
+        <p className="text-xl width-[90] font-medium text-gray-600">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iusto
           fugit dolores incidunt quisquam maiores pariatur quo vero et optio!
         </p>

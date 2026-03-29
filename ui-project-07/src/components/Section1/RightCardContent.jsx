@@ -8,15 +8,15 @@ const RightCardContent = (props) => {
         {props.id+1}
       </h2>
       <div>
-        <p className="text-lg leading-relaxed text-white mb-14  ">
+        <p className="text-lg leading-relaxed text-white mb-14 text-shadow-2xs ">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
           consequatur ab maiores laudantium, itaque nisi.
         </p>
         <div className=" flex justify-between">
-          <button className="bg-blue-600 text-white font-medium px-8 py-2 rounded-full ">
+          <button style={{backgroundColor:props.color}} className="  text-white font-medium px-8 py-2 rounded-full ">
             {props.tag}
           </button>
-          <button className="bg-blue-600 text-white font-medium px-3 py-2 rounded-full ">
+          <button style={{backgroundColor:props.color}} className=" text-white font-medium px-3 py-2 rounded-full ">
             <RiArrowRightLine />
           </button>
         </div>

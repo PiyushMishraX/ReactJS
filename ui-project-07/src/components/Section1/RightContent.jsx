@@ -12,7 +12,7 @@ const RightContent = (props) => {
 
       {props.users.map(function (elem,idx) {
         // return 'hello'
-        return <RightCard key={idx} id={idx}  img={elem.img} tag ={elem.tag}/>
+        return <RightCard key={idx} id={idx}  img={elem.img} tag ={elem.tag} color={elem.color}/>
       })}
     </div>
   )
