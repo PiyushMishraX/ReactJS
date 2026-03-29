@@ -1,15 +1,14 @@
 import React from 'react'
 
 const App = () => {
+
   function btnClicked() {
     console.log('button is clicked')
-    
   }
   return (
     <div>
-      <h1>Hello ,Piyush</h1>
-
-      <button>click user</button>
+      {/* <button onClick={btnClicked()}> Button </button> no like this because fn() runs it before hands */}
+      <button onClick={btnClicked}> Button </button>
     </div>
   )
 }
@@ -17,7 +16,12 @@ const App = () => {
 export default App
 
 
-// var a = document.querySelector('h1')
+
+//
+
+function btnClicked() {
+  
+}var a = document.querySelector('h1')
 
 // function hero() {
 //   console.log('Hero')
