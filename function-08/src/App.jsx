@@ -98,18 +98,52 @@
 
 // export default App
 
-import React from "react";
+
+
+// mouse move clientX and clientY
+// import React from "react";
+
+// const App = () => {
+//   return (
+//     <div>
+//       <div onMouseMove={(elem)=>{
+//         // console.log("dance")
+//         // console.log(elem)
+//         // console.log(elem.clientX)
+//         console.log(elem.clientY)
+//       }} className="box">
+
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
+
+
+import React from 'react'
 
 const App = () => {
+
+  const pageScrolling = ()=>{
+    console.log('page scrolling..')
+  }
   return (
-    <div>
-      <div onMouseMove={()=>{
-        console.log("dance")
-      }} className="box">
-
-      </div>
+    // <div onScroll={pageScrolling}> // wrong one it is on wheel
+    // <div onWheel={pageScrolling}>
+    <div onWheel={(elem)=>{
+      // console.log(elem);
+      console.log(elem.deltaY); // scrolling speed with direction
+      
+      // pageScrolling()
+    }}>
+      <div className="page1"></div>
+      <div className="page2"></div>
+      <div className="page3"></div>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
