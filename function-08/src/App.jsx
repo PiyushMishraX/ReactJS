@@ -10,6 +10,11 @@ const App = () => {
     console.log('Mouse Entered')
     
   }
+
+  function multiple(){
+    btnClicked()
+    mouseEnter()
+  }
   return (
     <div>
       {/* <button onClick={btnClicked()}> Button </button> no like this because fn() runs it before hands  whitout click*/}
@@ -29,6 +34,8 @@ const App = () => {
 
         }}> Click here </button>
 
+
+        <button onClick={multiple}> Using multiple function in one </button>
 
 
     </div>
