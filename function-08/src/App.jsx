@@ -123,34 +123,52 @@
 
 
 
+// import React from 'react'
+
+// const App = () => {
+
+//   const pageScrolling = (elem)=>{
+//     // console.log('page scrolling..')
+//     // console.log('page scrolling.. at speed', elem)
+
+//     if(elem>0){
+
+//       console.log('Scrolling');
+//     }else{
+//       console.log('backward scrolling');
+      
+//     }
+//   }
+//   return (
+//     // <div onScroll={pageScrolling}> // wrong one it is on wheel
+//     // <div onWheel={pageScrolling}>
+//     <div onWheel={(elem)=>{
+//       // console.log(elem);
+//       // console.log(elem.deltaY); // scrolling speed with direction + down , up - / use touchpad to see intensity values to bcz most mouses are notched which sends constant values  like 100 or 125
+      
+//       pageScrolling(elem.deltaY)
+//     }}>
+//       <div className="page1"></div>
+//       <div className="page2"></div>
+//       <div className="page3"></div>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// final learning
 import React from 'react'
 
 const App = () => {
 
-  const pageScrolling = (elem)=>{
-    // console.log('page scrolling..')
-    // console.log('page scrolling.. at speed', elem)
-
-    if(elem>0){
-
-      console.log('Scrolling');
-    }else{
-      console.log('backward scrolling');
-      
-    }
+  function btnClicked() {
+    console.log('hello')
   }
   return (
-    // <div onScroll={pageScrolling}> // wrong one it is on wheel
-    // <div onWheel={pageScrolling}>
-    <div onWheel={(elem)=>{
-      // console.log(elem);
-      // console.log(elem.deltaY); // scrolling speed with direction + down , up - / use touchpad to see intensity values to bcz most mouses are notched which sends constant values  like 100 or 125
-      
-      pageScrolling(elem.deltaY)
-    }}>
-      <div className="page1"></div>
-      <div className="page2"></div>
-      <div className="page3"></div>
+    <div>
+      <button >Click</button>
     </div>
   )
 }
