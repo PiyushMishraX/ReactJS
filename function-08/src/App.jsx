@@ -17,3 +17,16 @@ const App = () => {
 export default App
 
 
+// var a = document.querySelector('h1')
+
+// function hero() {
+//   console.log('Hero')
+// }
+
+// a.addEventListener('click', function () {
+//   console.log('Hero')
+// })
+
+
+// a.addEventListener('click', hero())  // runs automatically
+// a.addEventListener('click', hero) // runs when event i happening
