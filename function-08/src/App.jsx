@@ -5,10 +5,10 @@
 //   function btnClicked() {
 //     console.log('button is clicked')
 //   }
-  
+
 //   function mouseEnter(){
 //     console.log('Mouse Entered')
-    
+
 //   }
 
 // // define all propeties and functionality in one function only or use a final container function
@@ -26,7 +26,6 @@
 
 //       {/* <button onMouseEnter={mouseEnter} onClick={btnClicked}> Button </button> */}
 
-
 //       {/* <button onClick={btnClicked}> Button </button>
 //       <button onClick={btnClicked}>explore this</button> */}
 
@@ -40,7 +39,6 @@
 
 //         }}> Click here </button>
 
-
 //         <button onClick={multiple}> Using multiple function in one </button>
 
 //     </div>
@@ -48,8 +46,6 @@
 // }
 
 // export default App
-
-
 
 //var a = document.querySelector('h1')
 
@@ -61,42 +57,59 @@
 //   console.log('Hero')
 // })
 
-
 // a.addEventListener('click', hero())  // runs automatically
 // a.addEventListener('click', hero) // runs when event i happening
 
+// import React from 'react'
 
+// const App = () => {
 
+//   // function inputChanging(){
+//   //   console.log('use is Typing');
+//   // }
 
+//   function inputChanging(val){
+//     console.log(val);
+//   }
+//   return (
+//     <div>
+//       {/* <input onClick={()=>{
+//         console.log('input par click hua');
 
-import React from 'react'
+//       }} type="text" placeholder='Enter Name' /> */}
+
+//       {/* <input onChange={inputChanging} type="text" placeholder='Enter Name' /> */}
+
+//         {/* passing values without calling the function on compilation time/ automatic running  */}
+//         {/* create function directly in event listner so it can take calls(of elem) , then can passon the properties in the other function*/}
+//       <input
+//       // onClick={(elem)=>{
+//       onChange={(elem)=>{
+//         // console.log(elem);
+//         // console.log(elem.target);
+//         // console.log(elem.target.value);
+//         inputChanging()
+//         inputChanging(elem.target.value)
+
+//       }} type="text" placeholder='Enter Name' />
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React from "react";
 
 const App = () => {
-
-  function inputChanging(){
-    console.log('use is Typing');    
-  }
   return (
     <div>
-      {/* <input onClick={()=>{
-        console.log('input par click hua');
-        
-      }} type="text" placeholder='Enter Name' /> */}
+      <div onMouseMove={()=>{
+        console.log("dance")
+      }} className="box">
 
-      {/* <input onChange={inputChanging} type="text" placeholder='Enter Name' /> */}
-
-        {/* passing values without calling the function on compilation time/ automatic running  */}
-        {/* create function directly in event listner so it can take calls(of elem) , then can passon the properties in the other function*/}
-      <input 
-      // onClick={(elem)=>{
-      onChange={(elem)=>{
-        // console.log(elem);
-        // console.log(elem.target);
-        console.log(elem.target.value);
-        
-      }} type="text" placeholder='Enter Name' />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

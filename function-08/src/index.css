@@ -21,3 +21,10 @@ input{
   margin: 10px;
   padding: 10px 20px;
 }
+
+.box{
+  margin: 40px;
+  height: 200px;
+  width: 200px;
+  background-color: crimson;
+}
