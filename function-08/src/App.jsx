@@ -8,7 +8,9 @@ const App = () => {
   return (
     <div>
       {/* <button onClick={btnClicked()}> Button </button> no like this because fn() runs it before hands */}
-      <button onClick={btnClicked}> Button </button>
+      {/* <button onClick={btnClicked}> Button </button> */}
+      <button onDoubleClick={btnClicked}> Button </button>
+      {/* runs on double click only */}
     </div>
   )
 }
