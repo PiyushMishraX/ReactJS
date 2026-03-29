@@ -5,12 +5,20 @@ const App = () => {
   function btnClicked() {
     console.log('button is clicked')
   }
+  
+  function mouseEnter(){
+    console.log('Mouse Entered')
+    
+  }
   return (
     <div>
       {/* <button onClick={btnClicked()}> Button </button> no like this because fn() runs it before hands */}
       {/* <button onClick={btnClicked}> Button </button> */}
-      <button onDoubleClick={btnClicked}> Button </button>
+
+      {/* <button  onDoubleClick={btnClicked}> Button </button> */}
       {/* runs on double click only */}
+
+      <button onMouseEnter={mouseEnter} onClick={btnClicked}> Button </button>
     </div>
   )
 }
