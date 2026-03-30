@@ -67,3 +67,19 @@ const MyComponent = () => {
     </div>
   );
 };
+
+
+HOOKS-
+
+useSate  - state manage
+useEffect - on side by side
+useref - to select dom element , instead of query selector, use ref take sreference
+useCOntext - manage global content ( to access from anywhere)
+useReducer -  which thing can be accessed where , whether user is logged in or not for a feature / page, local storage managing 
+
+useMemo,useCallback -- optimization
+
+use state - basic state
+useCOntext- global state
+useReducer - advanced global state
+
