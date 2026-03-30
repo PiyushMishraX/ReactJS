@@ -5,6 +5,7 @@ const App = () => {
   
 
   const [title, setTitle] = useState('')
+  // const [title, setTitle] = useState('Piyush')
 
   const submitHandler = (e)=>{
     e.preventDefault()
@@ -26,12 +27,18 @@ const App = () => {
         // value = 'Piyush'
 
         value = {title}
+        // onChange={(e)=>{
+        //   // console.log('writing..');
+        //   // console.log(e);
+        //   // console.log(e.target);
+        //   console.log(e.target.value);
+        // }}/>
+
+        // now react can act on changed value of the input field
+        // which is done by two way binding 
+        // title -> value -> update -> setvalue(to updated) -> title  
         onChange={(e)=>{
-          // console.log('writing..');
-          // console.log(e);
-          // console.log(e.target);
-          console.log(e.target.value);
-          
+          setTitle(e.target.value);
         }}/>
         <button>Submit</button>
       </form>
