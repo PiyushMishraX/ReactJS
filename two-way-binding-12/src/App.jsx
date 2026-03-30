@@ -1,0 +1,42 @@
+import React, { useState } from "react";
+
+const App = () => {
+
+  
+
+  const [title, setTitle] = useState('')
+
+  const submitHandler = (e)=>{
+    e.preventDefault()
+    console.log('Form submitted');
+    
+  }
+
+  return (
+    <div>
+      {/* <form onSubmit={submitHandler} > */}
+      <form onSubmit={(e)=>{
+        submitHandler(e)
+      }} >
+        <input 
+        type="text" 
+        placeholder='Enter your name' 
+        // value='' // nothing will  be written in input box or just cleared as soon as entered to empty string and the e.target.bvalue will be single letter // value tells current value of input
+
+        // value = 'Piyush'
+
+        value = {title}
+        onChange={(e)=>{
+          // console.log('writing..');
+          // console.log(e);
+          // console.log(e.target);
+          console.log(e.target.value);
+          
+        }}/>
+        <button>Submit</button>
+      </form>
+    </div>
+  )
+}
+
+export default App
