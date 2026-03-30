@@ -38,7 +38,9 @@ h1{
   background-color: #222;
   width: fit-content;
   font-size:100px;
-  padding: 10px 80px;
+  /* padding: 10px 80px; */
+  /* padding: 10px 150px; */
+  padding: 10px 148px;
   margin: 20px;
   border-radius: 10px;
 }

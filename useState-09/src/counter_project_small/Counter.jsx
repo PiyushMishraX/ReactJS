@@ -16,11 +16,17 @@ const Counter = () => {
         setNum(num-1)
     }
 
+    function jump5Num(){
+        console.log('decreasing');
+        setNum(num+5)
+    }
+
   return (
     <div>
       <h1>{num}</h1>
       <button onClick={increaseNum}>Increase</button>
       <button onClick={decreaseNum}>decrease</button>
+      <button onClick={jump5Num}>Jump by 5</button>
     </div>
   );
 };
