@@ -30,19 +30,28 @@ const App = () => {
 
 
     setUsername("vijay")
+
+
+    setUsers([30,40,50])
     
   }
 
   // string 
   const [username, setUsername] = useState('Piyush')
+
+  //array
+  const [users, setUsers] = useState([10,20,30])
   
   return (
     <div>
       {/* <h1>Value of a is {a}</h1>
       <button onClick={changeA} >Click</button> */}
 
-      <h1>Value of num is {num}</h1><br />
+      <h1>Value of num is {num}</h1>
+      <br />
       <h1>Value of user is {username}</h1>
+      <br />
+      <h1>Value of users is {users}</h1>
       <button onClick={changeNum}>Click</button>
     </div>
   )
