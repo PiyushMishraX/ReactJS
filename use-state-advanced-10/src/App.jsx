@@ -80,15 +80,18 @@ const App = () => {
 
   const btnClicked =()=>{
     // num updates only one times // bcz pocess happens faster so the elements won't idetify value of num or just change the same vlaue so the intended process do not ha[[ens]]
-    setNum(num+1)
-    setNum(num+1)
-    setNum(num+1)
+    // setNum(num+1)
+    // setNum(num+1)
+    // setNum(num+1)
 
-    setNum(num+1)
-    setNum(num+2) // changes to +2 but the first value is passe again to next which changes og value to +1 again in prints
-    setNum(num+1)
+    // setNum(num+1)
+    // setNum(num+2) // changes to +2 but the first value is passe again to next which changes og value to +1 again in prints
+    // setNum(num+1)
 
-    
+    // batch update
+    setNum(prev=>(prev+1))
+    setNum(prev=>(prev+1))
+    setNum(prev=>(prev+1))
 
   }
 
