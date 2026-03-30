@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 const App = () => {
     // const [num, setNum] = useState(10)
-    // const [num, setNum] = useState({user:"Piyush", age:20})
-    const [num, setNum] = useState([10,20,30])
+    const [num, setNum] = useState({user:"Piyush", age:20})
+    // const [num, setNum] = useState([10,20,30])
 
     // const btnClicked = ()=>{
     //   // console.log('button clicked')
@@ -21,30 +21,34 @@ const App = () => {
 
 
   // object.array updation
-    // const btnClicked = ()=>{      
+    const btnClicked = ()=>{      
 
-    //   // console.log(num.user) 
+      // console.log(num.user) 
 
-    //   // updation method 1 destructuring 
-    //   // arr refer to the memory points but the memory place dosen't have data it just have refernce to datas // refernce variables 
+      // updation method 1 destructuring 
+      // arr refer to the memory points but the memory place dosen't have data it just have refernce to datas // refernce variables 
 
-    //   const newNum = {...num} // now no same reference point
-    //   newNum.user= 'Aman'
-    //   newNum.age= 24 
-    //   setNum(newNum)
-    //   // console.log(num)  
-    // }
+      // const newNum = {...num} // now no same reference point
+      // newNum.user= 'Aman'
+      // newNum.age= 24 
+      // setNum(newNum)
+      // // console.log(num)  
+
+
+      // Method 2
+
+      setNum(prev=>({...prev,age:50}))
+    }
 
 
   // array
-    const btnClicked = ()=>{
-      const newNum = [...num]
+    // const btnClicked = ()=>{
+    //   // const newNum = [...num]
+    //   // newNum.push(99)
+    //   // setNum(newNum)
 
-      newNum.push(99)
-
-      setNum(newNum)
       
-    }
+    // }
 
 
 
@@ -52,13 +56,13 @@ const App = () => {
     <div>
       {/* <h1>{num}</h1>
       <button onClick={btnClicked}>click</button> */}
-      {/* 
+      
       <h1>{num.user},{num.age}</h1>
-      <button onClick={btnClicked}>click</button> */}
+      <button onClick={btnClicked}>click</button>
 
       {/* <h1>{num}, {num[0]}</h1> */}
-      <h1>{num}</h1>
-      <button onClick={btnClicked}>click</button>
+      {/* <h1>{num}</h1>
+      <button onClick={btnClicked}>click</button> */}
     </div>
   )
 }
