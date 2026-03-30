@@ -9,7 +9,10 @@ const App = () => {
 
   const submitHandler = (e)=>{
     e.preventDefault()
-    console.log('Form submitted');
+    // console.log('Form submitted');
+    console.log('Form submitted', title); // now we can print and use this value 
+
+    setTitle('') // empty after submit
     
   }
 
@@ -37,6 +40,7 @@ const App = () => {
         // now react can act on changed value of the input field
         // which is done by two way binding 
         // title -> value -> update -> setvalue(to updated) -> title  
+        // here we think the value is changing bcz f user but no the value change bcz of react , as the user inputs
         onChange={(e)=>{
           setTitle(e.target.value);
         }}/>
@@ -47,3 +51,6 @@ const App = () => {
 }
 
 export default App
+
+// two way binding is used for form sumbit, changes , form data changing etc
+// next managin it with multiple inputs and outputs
