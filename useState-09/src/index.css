@@ -44,3 +44,44 @@ h1{
   margin: 20px;
   border-radius: 10px;
 }
+
+/* .counter{
+  display: flex;
+  margin: 30px;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: #fff;
+  border-radius: 60px;
+}
+
+span{
+  color: rgb(15, 15, 15);
+  font-weight: bolder;
+  font-size: 25px;
+  background-color: #fff;
+}
+
+ .counter button{
+  border: none;
+  outline: none;
+  color: rgb(62, 11, 11);
+  font-weight: bolder;
+  background-color: antiquewhite;
+  border: 2px solid rgb(248, 24, 24);
+
+  cursor: pointer;
+}
+
+.counter .btn1{
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.counter .btn2{
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+} */
+
+

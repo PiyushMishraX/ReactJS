@@ -29,6 +29,14 @@ const Counter = () => {
       <button onClick={jump5Num}>Jump by 5</button>
     </div>
   );
+
+//   return (
+//     <div className="counter">
+//       <button onClick={increaseNum} className="btn1">Increase</button>
+//       <span className="text">{num}</span>
+//       <button onClick={decreaseNum} className="btn2">decrease</button>
+//     </div>
+//   );
 };
 
 export default Counter;
