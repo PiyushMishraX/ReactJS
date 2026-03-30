@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,4 +13,23 @@ html,
 body{
   height: 100%;
   width: 100%;
+} */
+
+
+
+/* Target the body for global styles, NOT the universal selector * */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: rgb(244, 241, 241);
+  background-color: rgb(11, 11, 11);
+  height: 100%;
+  width: 100%;
+}
+
+/* If you want all elements to have border-box (standard practice) */
+*, ::after, ::before {
+  box-sizing: border-box;
 }
