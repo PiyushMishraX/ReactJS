@@ -1,0 +1,28 @@
+import React, { useState } from "react";
+
+const Counter = () => {
+    const [num, setNum] = useState(0)
+
+    function increaseNum(){
+        console.log('increasing');
+        // setNum(20)
+        // setNum(num++) // ++ not work here
+        setNum(num+1)
+    }
+    function decreaseNum(){
+        console.log('decreasing');
+        // setNum(10)
+        // setNum(num--) // -- not work here
+        setNum(num-1)
+    }
+
+  return (
+    <div>
+      <h1>{num}</h1>
+      <button onClick={increaseNum}>Increase</button>
+      <button onClick={decreaseNum}>decrease</button>
+    </div>
+  );
+};
+
+export default Counter;
