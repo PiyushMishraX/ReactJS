@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const App = () => {
   const [title, setTitle] = useState('')
+  const [details, setDetails] = useState('')
   
   
   // form handling
@@ -43,6 +44,10 @@ const App = () => {
           type="text"
           placeholder="Write details"
           className=" w-full p-5 h-32 py-2 border-2 rounded outline-none font-medium "
+          value={details}
+          onChange={(e)=>{
+            setDetails(e.target.value)
+          }}
         />
 
         <button className="w-full bg-white text-black px-5 py-2 rounded  outline-none font-medium ">
