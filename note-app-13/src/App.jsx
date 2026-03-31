@@ -4,12 +4,19 @@ const App = () => {
   const [title, setTitle] = useState('')
   const [details, setDetails] = useState('')
   
+  // mapping
+  const [task, setTask] = useState([])
   
   // form handling
   const submitHandler = (e) => {
     e.preventDefault();
     // console.log("Form submittes");
-    console.log(title, details);
+    // console.log(title, details);
+    // console.log(title);
+    // console.log(details);
+
+    const copyTask = [...task]; // old task copies
+
 
     setTitle('')
     setDetails('')
@@ -43,7 +50,7 @@ const App = () => {
           {/* deatails input */}
         <textarea
           type="text"
-          placeholder="Write details"
+          placeholder="Write details Here"
           className=" w-full p-5 h-32 py-2 border-2 rounded outline-none font-medium "
           value={details}
           onChange={(e)=>{
