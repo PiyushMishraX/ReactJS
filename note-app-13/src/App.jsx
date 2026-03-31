@@ -10,11 +10,10 @@ const App = () => {
   }
 
   return (
-    <div className="h-screen bg-black rtext-white  ">
+    <div className="h-screen lg:flex bg-black text-white   ">
       <form onSubmit={(e)=>{
         submitHandler(e)
-      }} className=" flex p-10 justify-between  gap-4  ">
-        <div className="items-start w-1/2 flex flex-col gap-4 ">
+      }} className=" flex lg:w-1/2   gap-4 items-start  flex-col p-10  ">
           <input
             type="text"
             placeholder="Enter Notes Heading"
@@ -28,7 +27,6 @@ const App = () => {
           <button className="w-full bg-white text-black px-5 py-2 rounded  outline-none font-medium ">
             Add Note{" "}
           </button>
-        </div>
 
         {/* <img
         // className="h-60"
@@ -37,6 +35,10 @@ const App = () => {
           alt=""
         /> */}
       </form>
+
+      <div className="flex flex-wrap p-10">
+        <div className="h-32 w-32 rounded-2xl bg-white"></div>
+      </div>
     </div>
   );
 };
