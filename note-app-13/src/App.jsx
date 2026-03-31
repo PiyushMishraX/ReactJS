@@ -20,7 +20,7 @@ const App = () => {
     copyTask.push({title,details})
     setTask(copyTask)
 
-    console.log(task);
+    console.log(task); // use batch update to see the changed value from set task / if it works
     console.log(copyTask);
     
 
@@ -80,9 +80,12 @@ const App = () => {
       <div className="lg:w-1/2 gap-5 lg:border-l-2 flex-wrap p-10">
         <h1 className=" text-4xl font-bold    ">Recent Notes</h1>
         <div className=" flex  flex-wrap gap-5 mt-5 h-full overflow-auto">
-          <div className="h-52 w-40 rounded-2xl bg-white"></div>
-          <div className="h-52 w-40 rounded-2xl bg-white"></div>
-          <div className="h-52 w-40 rounded-2xl bg-white"></div>
+          {/* <div className="h-52 w-40 rounded-2xl bg-white"></div> */}
+          
+          {task.map(function(){
+            // return 'Hello'
+            return <div className="h-52 w-40 rounded-2xl bg-white"></div>
+          })}
         </div>
       </div>
     </div>
