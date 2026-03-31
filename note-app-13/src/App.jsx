@@ -82,9 +82,12 @@ const App = () => {
         <div className=" flex  flex-wrap gap-5 mt-5 h-full overflow-auto">
           {/* <div className="h-52 w-40 rounded-2xl bg-white"></div> */}
           
-          {task.map(function(){
+          {task.map(function(elem, idx){
             // return 'Hello'
-            return <div className="h-52 w-40 rounded-2xl bg-white"></div>
+            return <div key='idx' className="h-52 w-40 rounded-2xl bg-white p-4 text-black ">
+              <h3 className=" leading-tight text-xl font-bold " >{elem.title}</h3>
+              <p className="mt-2 leading-tight font-medium text-gray-500" >{elem.details}</p>
+            </div>
           })}
         </div>
       </div>
