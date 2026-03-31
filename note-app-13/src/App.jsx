@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { RiCloseLine,RiCloseFill} from '@remixicon/react';
+import { useState } from "react";
+// import React, { useState } from "react";
+// import { RiCloseLine,RiCloseFill} from '@remixicon/react';
 
 
 const App = () => {
@@ -34,7 +35,8 @@ const App = () => {
     const copyTask = [...task]
     // console.log(copyTask[idx]);
 
-    copyTask.splice(idx,1)
+    copyTask.splice(idx,1) 
+    // because of map returing everytime an element changes everything refreshes
 
     setTask(copyTask)
 
@@ -104,10 +106,10 @@ const App = () => {
                 {/* <h2 className=" absolute tio-5 right-5 bg-red-500 text-xs  p-1 rounded-full "><RiCloseFill size={12} /></h2> */}
 
                 <div>
-                <h3 className=" leading-tight text-xl font-bold ">
+                <h3 className=" leading-tight text-lg font-bold ">
                   {elem.title}
                 </h3>
-                <p className="mt-2 leading-tight font-medium text-gray-500">
+                <p className=" text-xs mt-2 leading-tight font-semibold text-gray-400">
                   {elem.details}
                 </p>
                 </div>
