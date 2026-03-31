@@ -9,9 +9,10 @@ const App = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     // console.log("Form submittes");
-    console.log(title);
+    console.log(title, details);
 
-    setTitle = ''
+    setTitle('')
+    setDetails('')
   };
 
 
