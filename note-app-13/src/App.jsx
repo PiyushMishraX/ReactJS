@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { RiCloseLine,RiCloseFill} from '@remixicon/react';
+
 
 const App = () => {
   const [title, setTitle] = useState("");
@@ -83,9 +85,9 @@ const App = () => {
             return (
               <div
                 key="idx"
-                className=" relative bg-cover h-52 w-40 rounded-2xl p-4 text-black  bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] "
+                className=" relative bg-cover h-52 w-40 rounded-2xl pt-7 pl-4 pr-4 text-black  bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] "
               >
-                <h2></h2>
+                <h2 className=" absolute tio-5 right-5 bg-red-500 text-xs  p-1 rounded-full "><RiCloseFill size={12} /></h2>
                 <h3 className=" leading-tight text-xl font-bold ">
                   {elem.title}
                 </h3>
