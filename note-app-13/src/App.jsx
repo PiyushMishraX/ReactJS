@@ -85,15 +85,19 @@ const App = () => {
             return (
               <div
                 key="idx"
-                className=" relative bg-cover h-52 w-40 rounded-2xl pt-7 pl-4 pr-4 text-black  bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] "
+                className=" flex justify-between flex-col items-start relative bg-cover h-52 w-40 rounded-2xl pt-7 pl-4 pr-4 pb-5 text-black  bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] "
               >
-                <h2 className=" absolute tio-5 right-5 bg-red-500 text-xs  p-1 rounded-full "><RiCloseFill size={12} /></h2>
+                {/* <h2 className=" absolute tio-5 right-5 bg-red-500 text-xs  p-1 rounded-full "><RiCloseFill size={12} /></h2> */}
+
+                <div>
                 <h3 className=" leading-tight text-xl font-bold ">
                   {elem.title}
                 </h3>
                 <p className="mt-2 leading-tight font-medium text-gray-500">
                   {elem.details}
                 </p>
+                </div>
+                <button className=" w-full bg-red-500 text-white py-1 text-xs rounded font-bold cursor-pointer active:scale-95 ">Delete</button>
               </div>
             );
           })}
