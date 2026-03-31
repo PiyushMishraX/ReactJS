@@ -26,8 +26,9 @@ const App = () => {
 
   console.log(user)
 
-  localStorage.setItem('user', user) // saved as [object Object]
+  // localStorage.setItem('user', user) // saved as [object Object]
 
+  localStorage.setItem('user', JSON.stringify(user))
   return (
     <div>App</div>
   )
