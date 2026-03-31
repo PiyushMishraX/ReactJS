@@ -18,6 +18,16 @@ const App = () => {
   // localStorage.removeItem('user') // remove one item 
 
 
+  const user={
+    username: 'Piyush',
+    age:20,
+    city:'IND'
+  }
+
+  console.log(user)
+
+  localStorage.setItem('user', user) // saved as [object Object]
+
   return (
     <div>App</div>
   )
