@@ -29,6 +29,20 @@ const App = () => {
     setDetails("");
   };
 
+  const deleteNote = (idx)=>{
+    // console.log('note deleted');
+    const copyTask = [...task]
+    // console.log(copyTask[idx]);
+
+    copyTask.splice(idx,1)
+
+    setTask(copyTask)
+
+    
+
+    
+  }
+
   return (
     <div className="h-screen lg:flex bg-black text-white   ">
       <form
@@ -97,7 +111,9 @@ const App = () => {
                   {elem.details}
                 </p>
                 </div>
-                <button className=" w-full bg-red-500 text-white py-1 text-xs rounded font-bold cursor-pointer active:scale-95 ">Delete</button>
+                <button onClick={()=>{
+                  deleteNote(idx)
+                }} className=" w-full bg-red-500 text-white py-1 text-xs rounded font-bold cursor-pointer active:scale-95 ">Delete</button>
               </div>
             );
           })}
