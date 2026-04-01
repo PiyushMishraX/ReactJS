@@ -10,6 +10,13 @@ const App = () => {
     // const a = Math.random()
     // console.log('hello');// ye task main task jaisa nahi chalana hai , side stack mai chalana hai
 
+
+    // mousinting for setNum(num+1)
+  //   useEffect(() => {
+  //   console.log('use effect is running');
+  // });
+
+  // dependencies
     useEffect(() => {
     console.log('use effect is running');
   }, [num]);
