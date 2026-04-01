@@ -58,10 +58,10 @@ const App = () => {
   //   const {data} =  await axios.get('https://picsum.photos/v2/list')
   //   console.log(data);
   // }
-
+  
+  const [data, setData] = useState([])
   const getData = async () =>{  
 
-    const [data, setData] = useState([])
     const response =  await axios.get('https://picsum.photos/v2/list')
 
     setData(response.data) // now data becomes array of objects 
@@ -73,8 +73,10 @@ const App = () => {
     <div>
       <button onClick={getData}>get data</button>
       <div>
-        {data.map(function () {
-          return <h3>Hello</h3>
+        {data.map(function (elem, idx) {
+          // return <h3>Hello</h3>
+          // return <h3>Hello {idx}</h3>
+          return <h3>Hello, {elem.author}</h3>
           
         })}
       </div>
