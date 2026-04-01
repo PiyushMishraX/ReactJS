@@ -38,7 +38,12 @@ const App = () => {
   // }
 
   // using axios
-  const getData = async ()=>{
+  const getData =  async ()=>{
+    // const response = axios .get("https://jsonplaceholder.typicode.com/users") // promises pending if async await not use 
+    const response = await axios .get("https://jsonplaceholder.typicode.com/users")  
+
+    console.log(response);
+    console.log(response.data); // gives the data value eaily
     
 
   }
