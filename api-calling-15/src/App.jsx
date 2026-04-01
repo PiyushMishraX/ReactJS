@@ -18,9 +18,12 @@ const App = () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
 
     console.log(response); // it works       
-    console.log(response.json()); // it still runs synchronusly      
+    // console.log(response.json()); // it still runs synchronusly     
+    
+    const data = await response.json() 
+    console.log(data);
+    
   }
-
   return (
     <div>
       <button onClick={getData}>get data</button>
