@@ -1,5 +1,6 @@
 // import React from 'react'
 import axios from 'axios'
+import { useState } from 'react'
 
 const App = () => {
 
@@ -38,14 +39,32 @@ const App = () => {
   // }
 
   // using axios
-  const getData =  async ()=>{
-    // const response = axios .get("https://jsonplaceholder.typicode.com/users") // promises pending if async await not use 
-    const response = await axios .get("https://jsonplaceholder.typicode.com/users")  
-
-    console.log(response);
-    console.log(response.data); // gives the data value eaily
+  // const getData =  async ()=>{
+  //   // const response = axios .get("https://jsonplaceholder.typicode.com/users") // promises pending if async await not use 
+  //   // const response = await axios .get("https://jsonplaceholder.typicode.com/users")  
     
+  //   // console.log(response);
+  //   // console.log(response.data); // gives the data value eaily
+    
+  //   const {data} = await axios .get("https://jsonplaceholder.typicode.com/users")   // destructuring for easy changes etc //  {data} list the data  array of objects from the object 
 
+  //   console.log(data);
+  // }
+
+  // const getData = async () =>{
+  //   // const response =  await axios.get('https://picsum.photos/v2/list')
+  //   // console.log(response);
+    
+  //   const {data} =  await axios.get('https://picsum.photos/v2/list')
+  //   console.log(data);
+  // }
+
+  const getData = async () =>{  
+
+    const [data, setData] = useState([])
+    const response =  await axios.get('https://picsum.photos/v2/list')
+
+    setData(response.data) // now data becomes array of objects 
   }
 
 
@@ -53,6 +72,12 @@ const App = () => {
   return (
     <div>
       <button onClick={getData}>get data</button>
+      <div>
+        {data.map(function () {
+          return <h3>Hello</h3>
+          
+        })}
+      </div>
     </div>
   )
 }
