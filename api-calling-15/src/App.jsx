@@ -2,20 +2,20 @@ import React from 'react'
 
 const App = () => {
 
-  function getData(){
+  async function getData(){
     // console.log(" daaataaa");
 
     /// fetch \
-    const response = fetch('https://jsonplaceholder.typicode.com/todos/1')
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
 
-    console.log(response);
+    console.log(response); // gives promise pending without async await
     
     
   }
 
   return (
     <div>
-      <button onClick={getData()}>get data</button>
+      <button onClick={getData}>get data</button>
     </div>
   )
 }
