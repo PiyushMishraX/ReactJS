@@ -1,4 +1,5 @@
-import React from 'react'
+// import React from 'react'
+import axios from 'axios'
 
 const App = () => {
 
@@ -11,19 +12,39 @@ const App = () => {
   //   console.log(response); // gives promise pending without async await        
   // }
 
+
+  // const getData = async ()=>{
+  //   // console.log(" daaataaa");
+
+  //   // / fetch \
+  //   // const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+
+  //   // console.log(response); // it works       
+  //   // // console.log(response.json()); // it still runs synchronusly     
+    
+  //   // const data = await response.json() 
+  //   // console.log(data);
+
+
+    
+  //   // const response = await fetch('https://jsonplaceholder.typicode.com/todos') // get 200 datas 
+  //   const response = await fetch('https://jsonplaceholder.typicode.com/users') // get 200 datas 
+
+  //   console.log(response); 
+    
+  //   const data = await response.json() 
+  //   console.log(data);
+
+  // }
+
+  // using axios
   const getData = async ()=>{
-    // console.log(" daaataaa");
-
-    // / fetch \
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-
-    console.log(response); // it works       
-    // console.log(response.json()); // it still runs synchronusly     
     
-    const data = await response.json() 
-    console.log(data);
-    
+
   }
+
+
+
   return (
     <div>
       <button onClick={getData}>get data</button>

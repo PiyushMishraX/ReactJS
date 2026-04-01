@@ -83,3 +83,10 @@ use state - basic state
 useCOntext- global state
 useReducer - advanced global state
 
+
+
+axios -
+npm i axios
+
+add 
+import axios from 'axios' in the file if needed 
