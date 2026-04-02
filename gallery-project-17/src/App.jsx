@@ -7,6 +7,8 @@ const App = () => {
     // console.log(("data"));
 
     axios.post('url',{username:'Piyush', password:'piyushihere'})
+
+    // axios.patch // update
     
   }
 
