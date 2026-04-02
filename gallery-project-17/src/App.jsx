@@ -3,14 +3,18 @@ import axios from 'axios'
 
 const App = () => {
 
-  const getData = ()=>{
+  const getData = async ()=>{
     // console.log(("data"));
 
-    axios.post('url',{username:'Piyush', password:'piyushihere'})
-
+    // axios
+    // axios.post('url',{username:'Piyush', password:'piyushihere'})
     // axios.patch // update
-
     // axios.delete // 
+
+    const response = await axios.get('https://picsum.photos/v2/list?page=2&limit=100')
+
+    console.log(response)
+    console.log(response.data)
     
   }
 
