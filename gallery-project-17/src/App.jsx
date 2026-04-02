@@ -1,9 +1,12 @@
 import React from 'react'
+import axios from 'axios'
 
 const App = () => {
 
   const getData = ()=>{
-    console.log(("data"));
+    // console.log(("data"));
+
+    axios.post('url',{username:'Piyush', password:'piyushihere'})
     
   }
 

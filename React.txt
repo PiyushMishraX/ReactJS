@@ -87,6 +87,10 @@ useReducer - advanced global state
 
 axios -
 npm i axios
+or
+npm install axios
 
 add 
 import axios from 'axios' in the file if needed 
+
+axios
