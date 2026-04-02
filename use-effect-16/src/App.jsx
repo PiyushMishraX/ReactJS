@@ -89,11 +89,19 @@ const App = () => {
   //   console.log("use effect is running...");
   // },[]) // have dependecies which is '' empty string a value assigned to this changes the it will run
 
-  useEffect(() => {
-    console.log("use effect is running...");
+  // useEffect(() => {
+  //   console.log("use effect is running...");
   // },[a])
   // },[b])
-  },[a,b])
+  // },[a,b])
+
+  useEffect(() => {
+    aChanging()
+    // console.log("use effect is running...");
+  },[a])
+  useEffect(() => {
+    bChanging()
+  },[b])
   
 
   return (
