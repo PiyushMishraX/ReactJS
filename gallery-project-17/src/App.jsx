@@ -9,6 +9,8 @@ const App = () => {
     axios.post('url',{username:'Piyush', password:'piyushihere'})
 
     // axios.patch // update
+
+    // axios.delete // 
     
   }
 
