@@ -94,3 +94,14 @@ add
 import axios from 'axios' in the file if needed 
 
 axios
+
+
+
+React router dom -
+install
+npm i react-router-dom
+
+
+we use brwser router which use history api and routing is on client side
+
+
