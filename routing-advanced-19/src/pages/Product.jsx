@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Product = () => {
   return (
@@ -12,7 +12,9 @@ const Product = () => {
           WoMen
         </Link>
       </div>
-      <h1>Product page</h1>
+      {/* <h1>Product page</h1> */}
+
+      <Outlet />
     </div>
   );
 };

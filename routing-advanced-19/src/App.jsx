@@ -18,9 +18,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/product" element={<Product />} />
-        <Route path="/product/men" element={<Men />} />
-        <Route path="/product/women" element={<Women />} />
+        <Route path="/product" element={<Product />} >
+        {/* proper esting method */}
+        {/* <Route path="/product/men" element={<Men />} />
+        <Route path="/product/women" element={<Women />} /> */}
+        <Route path="men" element={<Men />} />
+        <Route path="women" element={<Women />} />
+        </Route>
 
         <Route path="*" element={<NotFound/>}/>
       </Routes>
