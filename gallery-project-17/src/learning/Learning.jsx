@@ -1,3 +1,5 @@
+// it paginatio here data is loaded ( next page is loaded ) when a certain button or element is clicked
+// infinite scrollin g is when data is loaded only when scrolling by use ( like youtube )
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -115,3 +117,15 @@ const App = () => {
 }
 
 export default App
+
+// more features 
+// add page numbers at bottom ( inbuilt by yourself )
+// removeing prev when page 1 
+
+
+
+// react-paginate library gives botton bar where page numbers are written where we can directly jump to that value of page 
+// it is for pagination
+
+// for pagination we changed page number {index} 
+// for infinite scroling we will increase number of components =30 -> {no_of_image} // when scrolling // and use lazy loading 
