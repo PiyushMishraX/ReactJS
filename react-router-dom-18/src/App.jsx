@@ -1,14 +1,25 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
 
 const App = () => {
   return (
     <div>
-      
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/about' element={<About/>} /> 
+        {/* react router dom se single page application ( SPA ) bana hai , no reloading and url changes */}
+      </Routes>
     </div>
   )
 }
 
 export default App
+
+
+
+
 
 // routing -> switching pages
 
