@@ -33,12 +33,16 @@ const App = () => {
 
   return (
     <div className='bg-black h-screen p-4 overflow-auto text-white'>
-      <div className='flex h-[94%] flex-wrap gap-4 p-2'>
+      {/* <div className='flex h-[94%] flex-wrap gap-4 p-2'> */}
+      <div className='flex flex-wrap gap-4 p-2'>
         {printUserData}
       </div>
 
-      <div className='flex gap-6 justify-center items-center'>
+      {/* <div className='flex gap-6 justify-center items-center'> */}
+      {/* <div className=' fixed bottom-0 w-100%  flex gap-6 justify-center items-center'> */}
+      <div className=' fixed bottom-0 w-full z-10  flex gap-6 justify-center items-center p-2 bg-black'>
         <button
+        
           className='bg-amber-400 text-black rounded px-4 py-2 font-semibold text-sm cursor-pointer active:scale-95'
           onClick={() => {
             if (index > 1) {
@@ -49,6 +53,9 @@ const App = () => {
         >
           Prev
         </button>
+
+        <h4>Page {index}</h4>
+
         <button
           className='bg-amber-400 text-black rounded px-4 py-2 font-semibold text-sm cursor-pointer active:scale-95'
           onClick={() => {
