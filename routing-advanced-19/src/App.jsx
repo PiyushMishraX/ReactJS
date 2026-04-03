@@ -24,7 +24,8 @@ const App = () => {
         <Route path="/courses" element={<Courses />} />
 
         {/* dynamic routing */}
-        <Route path="/courses/:id" element={<CourseDetail />} />
+        {/* <Route path="/courses/:id" element={<CourseDetail />} /> */}
+        <Route path="/courses/:courseId" element={<CourseDetail />} />
 
         <Route path="/product" element={<Product />} >
         {/* proper esting method */}

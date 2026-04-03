@@ -1,8 +1,20 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const About = () => {
-  return (
+    
+    // it is used in features such as returning to mainpage after  login
+
+    const navigate = useNavigate()
+
+    const btnClicked = ()=>{
+        // console.log('button is clicked');
+        
+    }
+
+    return (
     <div>
+        <button onClick={btnClicked} className=' bg-emerald-400 px-5 py-2 rounded m-2 cursor-pointer active:scle-95'>Return to Homepage</button>
         <h1>About Page</h1>
     </div>
   )
