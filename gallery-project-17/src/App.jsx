@@ -7,7 +7,7 @@ const App = () => {
   const [index, setIndex] = useState(1)
 
   const getData = async () => {
-    const response = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=10`)
+    const response = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=30`)
     setUserData(response.data)
   }
 
@@ -40,9 +40,13 @@ const App = () => {
 
       {/* <div className='flex gap-6 justify-center items-center'> */}
       {/* <div className=' fixed bottom-0 w-100%  flex gap-6 justify-center items-center'> */}
-      <div className=' fixed bottom-0 w-full z-10  flex gap-6 justify-center items-center p-2 bg-black'>
+      {/* <div className=' fixed bottom-0 w-full z-10 flex gap-6 justify-center items-center p-2 bg-black/75'> */}
+      <div className=' fixed bottom-0 w-full z-10 flex gap-6 justify-center items-center p-2 bg-black/85'>
+
         <button
-        
+        // opacity of button changes when it is needed i.e. index>1
+          style={{opacity:index ==1?0.5 : 1}}
+          // disabled= 'true'
           className='bg-amber-400 text-black rounded px-4 py-2 font-semibold text-sm cursor-pointer active:scale-95'
           onClick={() => {
             if (index > 1) {

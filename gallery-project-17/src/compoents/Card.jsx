@@ -2,8 +2,8 @@ import React from 'react'
 
 const Card = (props) => {
 
-    console.log(props); 
-    console.log(props.elem); 
+    // console.log(props); 
+    // console.log(props.elem); 
     // data is indside props.elem because props is object with each passed value as a property such as elem and elem has the data
 
   return (
