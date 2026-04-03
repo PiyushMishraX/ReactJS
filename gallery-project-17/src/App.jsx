@@ -39,7 +39,8 @@ const App = () => {
   },[index]) // now it will be called whenever index reloads
 
   // let printUserData = "No user available"
-  let printUserData = <h3 className='text-gray-400 text-xs'>No User Available</h3>
+  // let printUserData = <h3 className='text-gray-400 text-xs'>No User Available</h3>
+  let printUserData = <h3 className='text-gray-400 text-xs absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 '>Loading</h3>
 
   if(userData.length > 0){
     printUserData = userData.map(function (elem,idx) {
@@ -82,6 +83,8 @@ const App = () => {
           // console.log("Prev button clicked");
           if(index>1){
             setIndex(index-1)
+            // lazy loading to insure smoothness even if the images aren't loaded
+            setUserData([]) // now images will first be cleared than next will be loaded
 
           }
           
@@ -94,6 +97,7 @@ const App = () => {
         onClick={()=>{
           // console.log("Next button clicked");
           setIndex(index+1)
+          setUserData([]) 
           
         }}
         >
