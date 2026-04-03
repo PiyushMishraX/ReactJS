@@ -12,11 +12,13 @@ import Women from "./pages/Women";
 import Kids from "./pages/kids";
 import Courses from "./pages/Courses";
 import CourseDetail from "./pages/CourseDetail";
+import Navbar2 from "./components/Navbar2";
 
 const App = () => {
   return (
     <div className="h-screen bg-black text-white ">
       <Navbar />
+      <Navbar2 />
       {/* <About /> */}
       <Routes>
         <Route path="/" element={<Home />} />
