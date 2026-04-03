@@ -23,8 +23,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/courses" element={<Courses />} />
 
-        {/* dynamic rout */}
-        <Route path="./courses/:id" element={<CourseDetail />} />
+        {/* dynamic routing */}
+        <Route path="/courses/:id" element={<CourseDetail />} />
 
         <Route path="/product" element={<Product />} >
         {/* proper esting method */}
