@@ -12,7 +12,11 @@ const Navbar2 = () => {
         }} className=' bg-amber-500 px-5 py-2 rounded m-2 cursor-pointer active:scle-95'>Return to Homepage</button>
         <button onClick={()=>{
             navigate(-1) // goes to the previous page such as product etc not just home 
-        }} className=' bg-amber-500 px-5 py-2 rounded m-2 cursor-pointer active:scle-95'>Return to Back</button>
+        }} className=' bg-amber-500 px-5 py-2 rounded m-2 cursor-pointer active:scle-95'>Back</button>
+        <button onClick={()=>{
+            navigate(+1)
+        }} className=' bg-amber-500 px-5 py-2 rounded m-2 cursor-pointer active:scle-95'>Next</button> 
+        {/* next page when we return using bback button it tracks the page we backed from th ecurrent page will become user if backed the value will be in - and reduce and next increase it by +1 till 0 */}
     </div>
   )
 }

@@ -16,6 +16,7 @@ const Navbar = () => {
         <Link className='text-medium font-bold ' to='/about'>About</Link>
         <Link className='text-medium font-bold ' to='/courses'>Courses</Link>
         <Link className='text-medium font-bold ' to='/product'>Product</Link>
+        {/* navlink her e instead of link will tell what item is clicked  */}
 
 
       </div>
