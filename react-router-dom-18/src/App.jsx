@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Navbar from './component/Navbar'
+import Product from './pages/Product'
 
 const App = () => {
   return (
@@ -19,16 +20,19 @@ const App = () => {
         {/* react router dom se single page application ( SPA ) bana hai , no reloading and url changes */}
 
         <Route path='/contact' element={<Contact />} /> 
+        <Route path='/product' element={<Product />} /> 
 
       </Routes>
 
-      <h2>This is  footer</h2>
+      {/* <h2>This is  footer</h2> */}
       {/* see in every page */}
     </div>
   )
 }
 
 export default App
+
+// it was basic setup , need to learn nested routes next , dynamic routes , use navigate , 404 page
 
 
 
