@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Navbar from './component/Navbar'
 
 const App = () => {
   return (
@@ -10,15 +11,7 @@ const App = () => {
       {/* <h2>This is navbar</h2>  */}
       {/* above will show in every page */}
 
-      <div className='nav'>
-
-        <h3>Website</h3>
-        <div>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
-        </div>
-      </div>
+      <Navbar />
 
       <Routes>
         <Route path='/' element={<Home/>} />
