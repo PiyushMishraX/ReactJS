@@ -16,7 +16,8 @@ const App = () => {
 
 
     // const response = await axios.get('https://picsum.photos/v2/list')/
-    const response = await axios.get('https://picsum.photos/v2/list?page=2&limit=30') // no same value
+    // const response = await axios.get('https://picsum.photos/v2/list?page=2&limit=30') // no same value
+    const response = await axios.get('https://picsum.photos/v2/list?page=3&limit=30') // no same value
 
     // console.log(response)
     // console.log(response.data)
@@ -35,9 +36,14 @@ const App = () => {
       // return 'hello'
       // return idx
       // console.log(elem.download_url)
-      return <div  >
+      return <div>
+
+      {/* <div className='h-40 w-44 overflow-hidden bg-white rounded-xl' > */}
+      <div className='h-40 w-44 overflow-hidden  rounded-xl' >
         {/* <img src="elem.download_url" alt="" /> // use curly braces */}
-        <img className='h-40 ' src={elem.download_url} alt="" />
+        <img className='h-full w-full object-cover ' src={elem.download_url} alt="" />
+      </div>
+      <h2>{elem.author}</h2>
       </div>
     })
   }
