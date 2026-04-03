@@ -9,7 +9,10 @@ const Product = () => {
           Men
         </Link>
         <Link className="text-xl font-semibold" to="/product/women">
-          WoMen
+          Women
+        </Link>
+        <Link className="text-xl font-semibold" to="/product/kids">
+          Kids
         </Link>
       </div>
       {/* <h1>Product page</h1> */}
