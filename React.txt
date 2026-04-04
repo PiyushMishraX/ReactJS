@@ -105,3 +105,10 @@ npm i react-router-dom
 we use brwser router which use history api and routing is on client side
 
 
+Context api need
+// app -> navbar -> sidebar -> userprofile ->username
+
+sending data from app to userprofile directly isn't being done 
+which is a  very time taking process through props drilling
+if we wan't to pass data to userprofile 
+
