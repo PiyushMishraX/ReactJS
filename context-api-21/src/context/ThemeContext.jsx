@@ -6,6 +6,8 @@ import React, { createContext } from "react";
 export const ThemeDataContext = createContext();
 // export so any where it can be used 
 
+export const PostDataContext = createContext();
+
 const ThemeContext = (props) => {
 
   return (
@@ -15,9 +17,14 @@ const ThemeContext = (props) => {
     //providing the context // use .Provider method
     <div>
       {/* <ThemeDataContext.Provider> */}
-      <ThemeDataContext.Provider value='Piyush'>
+      {/* <ThemeDataContext.Provider value='Piyush'>
         {props.children}
-      </ThemeDataContext.Provider>
+      </ThemeDataContext.Provider> */}
+
+      {/* <PostDataContext.Provider value={[]}> */}
+      <PostDataContext.Provider value='Piyush'>
+        {props.children}
+      </PostDataContext.Provider>
     </div>
   );
 };
