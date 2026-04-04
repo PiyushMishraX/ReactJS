@@ -112,3 +112,18 @@ sending data from app to userprofile directly isn't being done
 which is a  very time taking process through props drilling
 if we wan't to pass data to userprofile 
 
+we need to centralize the data
+in big apps it is must to do this , to reduce time taken and increase efficiency and reduce chances of errors
+
+data centralizationfor example we have a navabr-> navbar2 -> theme 
+so we need to make theme centralize so , whenver it changes each component and part of site can see which theme to use 
+
+it is achieved with the help of context api 
+and redux also have data centralization
+
+// even in mid size application props drilling isn't good
+
+we need  for understandin contexxt api
+1. context ( create it )
+2. provider
+3. use context
