@@ -20,15 +20,28 @@ import Nav2 from './Nav2'
 //   )
 // }
 
+
 // props is an array we can directly use children and theme properties which is being passed , using destructuring // so we can use desired properties only which we help to reduce conflicts and errors
 // const Navbar = ({children}) => {
-const Navbar = ({children,theme}) => {
-    console.log(children);
+// const Navbar = ({children,theme}) => {
+//     console.log(children);
+    
+//   return (
+//     <div className='nav'>
+//         <h2>Website</h2>
+//         <Nav2 theme={theme} />
+//     </div>
+//   )
+// }
+
+
+const Navbar = (props) => {
     
   return (
     <div className='nav'>
         <h2>Website</h2>
-        <Nav2 theme={theme} />
+        
+        <Nav2 theme={props.theme} />
     </div>
   )
 }
