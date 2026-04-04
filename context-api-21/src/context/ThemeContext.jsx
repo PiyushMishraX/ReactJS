@@ -2,7 +2,7 @@ import React, { createContext } from "react";
 
 // creating context-
 
-//  ThemeDataContext is the context which will provide the data in eveywhere
+//  ThemeDataContext is the context which will provide the data in eveywhere // create it outside the function
 export const ThemeDataContext = createContext();
 // export so any where it can be used 
 
@@ -10,7 +10,15 @@ const ThemeContext = (props) => {
 
   return (
     // <div>ThemeContext</div>
-    <div>{props.children}</div>
+    // <div>{props.children}</div>
+    
+    //providing the context // use .Provider method
+    <div>
+      {/* <ThemeDataContext.Provider> */}
+      <ThemeDataContext.Provider data='Piyush'>
+        {props.children}
+      </ThemeDataContext.Provider>
+    </div>
   );
 };
 
