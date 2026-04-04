@@ -15,7 +15,7 @@ const ThemeContext = (props) => {
     //providing the context // use .Provider method
     <div>
       {/* <ThemeDataContext.Provider> */}
-      <ThemeDataContext.Provider data='Piyush'>
+      <ThemeDataContext.Provider value='Piyush'>
         {props.children}
       </ThemeDataContext.Provider>
     </div>
