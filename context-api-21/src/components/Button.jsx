@@ -10,7 +10,8 @@ const Button = () => {
 
     const changeTheme = ()=>{
 
-        setTheme('Dark')
+        // setTheme('Dark')
+        setTheme('dark')
     }    
 
   return (

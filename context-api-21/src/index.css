@@ -14,9 +14,27 @@ body {
   box-sizing: border-box;
 }
 
-.nav{
+/* .nav{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 20px;
   background-color: lightseagreen;
+} */
+
+.light{
+  background-color: lightseagreen;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 20px;
+}
+
+.dark{
+  background-color: darkslategrey;
+
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 13px 20px;
