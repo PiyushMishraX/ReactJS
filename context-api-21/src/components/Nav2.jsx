@@ -9,6 +9,7 @@ const Nav2 = (props) => {
         <h4>Services</h4>
         <h4>{props.theme}</h4> 
         {/* it took so much eeforts just so theme can be in Nav2 from App thrugh props drilling */}
+        {/* so we will create context */}
     
     </div>
   )

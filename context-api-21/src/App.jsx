@@ -8,7 +8,14 @@ const App = () => {
 
   return (
     <div>
-      <Navbar theme={theme}/>
+      {/* using self closing tag */}
+      {/* <Navbar theme={theme}/> */}
+      {/*  */}
+      <Navbar theme={theme}>
+        <h2>This is navbar</h2> 
+        <h2>It is navbar</h2> 
+        {/* it is children which will be passed in props */}
+      </Navbar>
     </div>
   )
 }
