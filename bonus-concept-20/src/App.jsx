@@ -9,7 +9,9 @@ const App = () => {
       {/* <h1>Theme is Light</h1> */}
       <h1>Theme is {theme}</h1>
 
-      <Navbar theme={theme} />
+      {/* <Navbar theme={theme} /> */}
+      <Navbar theme={theme} setTheme={setTheme}/>
+      {/* passing setTheme function in props to so navbar can use it  */}
     </div>
   )
 }
