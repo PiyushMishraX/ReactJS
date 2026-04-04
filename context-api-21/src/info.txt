@@ -1,0 +1,6 @@
+
+context api steps ( after creating file )
+
+create context
+provide the data
+use the data
